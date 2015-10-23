@@ -1,0 +1,26 @@
+This is homework 4 for Interactive Computer Graphics, by Shangqi Wu.
+
+This program is developed with the virtual machine provided by this course. 
+
+To compile this program, please use the makefile and type "make" in command line. Executable file will be named "hw4". Command "make clean" can remove the executable file.
+
+To run this program, please type "./hw4" in command line. This program successfully fulfills all requirements in the homework instructions. It displays a 3D color cube in the window. 
+
+Default view of cube is to look at the front. (points at z = -0.5)
+ 
+You can invoke menu by right click inside the window. There are 4 options: Scale, Rotate, Translate, and Disabling all transformations. By default, all transformations are disabled. By left clicking the options in the menu, you can choose which kind of transformation to be modified. 
+
+Instruction for modifying transformation by keyboard is listed below:
+x: Decreasing x value in current transformation, i.e., moving left in translation, rotating clockwise along x-axis, or shrinking in x-direction
+c: Increasing x value in current transformation, i.e., moving right in translation, rotating counter-clockwise along x-axis, or enlarging in x-direction
+y: Decreasing y value in current transformation, i.e., moving up in translation, rotating clockwise along y-axis, or shrinking in y-direction
+h: Increasing y value in current transformation, i.e., moving down in translation, rotating counter-clockwise along y-axis, or enlarging in y-direction
+a: Decreasing z value in current transformation, i.e., rotating clockwise along z-axis, or shrinking in z-direction (no effects when translating)
+z: Increasing z value in current transformation, i.e., rotating counter-clockwise along z-axis, or enlarging in z-direction (no effects when translating)
+
+d: Increasing delta for current transformation, while delta for other transformations remain unchanged. 
+f: Decreasing delta for current transformation, while delta for other transformations remain unchanged.
+
+r: Reset the transformation matrix to default value, and the view is changed to default view. 
+
+After press corresponding keys, the view of cube is changed immediately. 
